@@ -1,0 +1,53 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cloud_connect@file:../cloud-connect",
+        "scope": null,
+        "escapedName": "cloud_connect",
+        "name": "cloud_connect",
+        "rawSpec": "file:../cloud-connect",
+        "spec": "/Users/stephenwhite/Documents/Projects/telenor/cc20-lora/cloud-connect",
+        "type": "directory"
+      },
+      "/Users/stephenwhite/Documents/Projects/telenor/cc20-lora/iot-client"
+    ]
+  ],
+  "_from": "../cloud-connect",
+  "_id": "cloud-connect@0.2.0",
+  "_inCache": true,
+  "_location": "/cloud-connect",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cloud_connect@file:../cloud-connect",
+    "scope": null,
+    "escapedName": "cloud_connect",
+    "name": "cloud_connect",
+    "rawSpec": "file:../cloud-connect",
+    "spec": "/Users/stephenwhite/Documents/Projects/telenor/cc20-lora/cloud-connect",
+    "type": "directory"
+  },
+  "_requiredBy": [],
+  "_resolved": "file:../cloud-connect",
+  "_shasum": "09ddf0b7996df3b466dd99750962db7cf77b837c",
+  "_shrinkwrap": null,
+  "_spec": "cloud_connect@file:../cloud-connect",
+  "_where": "/Users/stephenwhite/Documents/Projects/telenor/cc20-lora/iot-client",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.14",
+    "aws-sdk": "^2.7.19",
+    "request": "^2.79.0",
+    "stdio": "^0.2.7",
+    "winston": "^2.3.0"
+  },
+  "description": "Cloud Connect library",
+  "devDependencies": {},
+  "main": "index.js",
+  "name": "cloud-connect",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "## Cloud Connect library\n\n### Building\n\nBuilding is done with [npm](https://www.npmjs.com/):\n\n    npm install\n    npm link\n\nor [yarn](https://yarnpkg.com/):\n\n    yarn\n    yarn link\n\n\n### Usage\n\nTo use the library in your own project you need to run\n\n    npm link cloud-connect\n\nin you project directory (optionally replace npm with yarn).\n\nThe below example connects to the Cloud Connect platform, subscribes to an MQTT topic, registers a message\nhandler that triggers for each received message, and then publishes to the topic it is subscribed on.\n\n```javascript\nconst CloudConnect = require(\"cloud-connect\");\nconst cc = new CloudConnect(account, env, username, password);\n\ncc.init().then(() => {\n  cc.mqtt.on(\"connect\", () => {\n    cc.mqtt.subscribe(\"someTopic\");\n  });\n\n  cc.mqtt.on(\"message\", (topic, payload) => {\n    console.log(`Received on ${topic}:`, payload.toString());\n  });\n\n  cc.mqtt.publish(\"someTopic\", \"Hello World!\");\n})\n```\n",
+  "readmeFilename": "README.md",
+  "scripts": {},
+  "version": "0.2.0"
+}

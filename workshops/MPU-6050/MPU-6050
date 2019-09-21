@@ -1,0 +1,11 @@
+while True:
+    unpack('>h2',i2c.readfrom_mem(104,0x41,2))[0]/340.0+36.53
+    sleep(1)
+
+0x3B for accel X
+0x3D for accel Y
+0x3F for accel Z
+0x41 for temp (/340.0+36.53 for Celsius)
+0x43 for gyro X
+0x45 for gyro Y
+0x47 for gyro Z

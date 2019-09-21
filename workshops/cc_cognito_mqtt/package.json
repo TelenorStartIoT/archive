@@ -1,0 +1,17 @@
+{
+  "name": "cc-cognito-mqtt",
+  "version": "1.0.0",
+  "description": "Client utilising Cloud Connect to subscribe and publish messages to thing topics",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/cognito.js -u <username> -P <password> -v -a 064445364562 -e prod -s '<sub path>' -p '<pub path>'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pontus Aurdal",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^2.4.0",
+    "stdio": "^0.2.7",
+    "winston": "^2.3.1"
+  }
+}
