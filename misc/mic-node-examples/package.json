@@ -1,0 +1,25 @@
+{
+  "name": "mic-node-examples",
+  "version": "1.0.0",
+  "description": "This repository contains some examples written in Node.js. An external [mic-sdk-js](https://www.npmjs.com/package/mic-sdk-js) module is used to simplify the invocation of API functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TelenorStartIoT/mic-node-examples.git"
+  },
+  "author": "Pontus Aurdal <pontus.edvard@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TelenorStartIoT/mic-node-examples/issues"
+  },
+  "homepage": "https://github.com/TelenorStartIoT/mic-node-examples#readme",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.1",
+    "aws-mqtt-client": "0.0.5",
+    "aws-signature-v4": "1.2.1",
+    "mic-sdk-js": "0.0.2"
+  }
+}

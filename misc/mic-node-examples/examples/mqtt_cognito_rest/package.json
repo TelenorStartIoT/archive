@@ -1,0 +1,17 @@
+{
+  "name": "mqtt_cognito_rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-mqtt-client": "0.0.5",
+    "aws-sdk": "^2.315.0",
+    "aws-signature-v4": "1.2.1",
+    "axios": "^0.18.0"
+  }
+}
