@@ -1,0 +1,22 @@
+{
+  "name": "mic-cloud-api-quick-start",
+  "version": "0.0.1",
+  "description": "Project code for the MIC Cloud API guide.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pontus Aurdal <pontus.edvard@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mic-sdk-js": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TelenorStartIoT/mic-cloud-api-quick-start.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TelenorStartIoT/mic-cloud-api-quick-start/issues"
+  },
+  "homepage": "https://github.com/TelenorStartIoT/mic-cloud-api-quick-start#readme"
+}
