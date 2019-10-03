@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+    <rect height="50" width="50" data-y="0" y="-50" x="0" fill="#41b882"/>
+    <rect height="50" width="50" data-y="50" y="-50" x="25" fill="#2ca56e"/>
+    <rect height="50" width="50" data-y="100" y="-50" x="50" fill="#0b9054"/>
+    <rect height="50" width="50" data-y="150" y="-50" x="75" fill="#065632"/>
+    <rect height="50" width="50" data-y="100" y="-50" x="100" fill="#0b9054"/>
+    <rect height="50" width="50" data-y="50" y="-50" x="125" fill="#2ca56e"/>
+    <rect height="50" width="50" data-y="0" y="-50" x="150" fill="#41b882"/>
+  </g>
+</svg>
