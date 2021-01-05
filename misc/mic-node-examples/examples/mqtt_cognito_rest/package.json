@@ -12,6 +12,6 @@
     "aws-mqtt-client": "0.0.5",
     "aws-sdk": "^2.315.0",
     "aws-signature-v4": "1.2.1",
-    "axios": "^0.18.1"
+    "axios": "^0.21.1"
   }
 }
